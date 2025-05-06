@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Pacman</title>
+    <link rel="stylesheet" href="/css/bart.css">
+
+</head>
+<body>
+    <h1><strong>the Simpsman</strong></h1>
+    <h2>Score: <span class="score">0</span> | Timer: <span class="timer">0s</span> | Lives: <span class="lives">3</span></h2>
+    <div class="grid"></div>
+    <div class="style">
+        <h3>Game paused </h3>
+        <div id="pause"></div>
+        <button class="continue">Continue</button>
+        <button onclick="location.reload()">Restart</button>
+        <button><a href="index.html" style="text-decoration: none;">Back to Home</a></button>
+    </div>
+    <div class="style" id="loose">
+        <h3>You Loose!! </h3>
+        <div id="youLoose"></div>
+        <button onclick="location.reload()">Restart</button>
+        <button><a href="index.html" style="text-decoration: none;">Back to Home</a></button>
+    </div>
+    <div class="style" id="win">
+        <h3>You Win!! </h3>
+        <div id="youWin"></div>
+        <button onclick="location.reload()">Restart</button>
+        <button><a href="index.html" style="text-decoration: none;">Back to Home</a></button>
+    </div>
+    <script src="bart.js"></script>
+</body>
+</html>

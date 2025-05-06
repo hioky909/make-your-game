@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Pacman</title>
+    <link rel="stylesheet" type="text/css" href="/css/homer.css">
+</head>
+<body>
+    <h1><strong>the Simpsman</strong></h1>
+    <div id="scoreboard">
+        <h2>Time : <span id="timer">0</span> | Score : <span id="displayScore">0</span> | Lives : <span id="lives">3</span>  | Burns : <span id="burns">4</span></h2>
+    </div>
+    <div class="countainer" id="mainCountainer"></div>
+
+    <img src="/images/batspringield.png" class="overlay">
+    <div class="style" id="pause-menu">
+        <h3>Game Paused</h3>
+        <div id="pause"></div>
+        <button onclick="togglePause()">Continue</button>
+        <button onclick="location.reload()">Restart</button>
+        <button><a href="index.html" style="text-decoration: none;">Back to Home</a></button>
+
+    </div>
+    <div class="style" id="you-win">
+        <h3>You Win!!</h3>
+        <div id="win"></div>
+        <button onclick="location.reload()">Restart</button>
+        <button><a href="index.html" style="text-decoration: none;">Back to Home</a></button>
+
+    </div>
+    <div class="style" id="you-loose">
+        <h3>You Loose!!</h3>
+        <div id="loose"></div>
+        <button onclick="location.reload()">Restart</button>
+        <button><a href="index.html" style="text-decoration: none;">Back to Home</a></button>
+
+    </div>
+    <script type="module" src="homer.js"></script>
+</body>
+
+</html> 
